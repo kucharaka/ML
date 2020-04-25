@@ -1,0 +1,12 @@
+from numpy import dot, ones
+from random import randint
+from numpy.linalg import inv
+
+x = ones((85, 2))
+y = ones((85, 1))
+for i in range(16, 101):
+    x[i - 16][1] = i
+    y[i - 16][0] = 108 + randint(-25, 25) + 2 * x[i-16][1]
+weight = dot(dot(inv(dot(x.T, x)), x.T), y)
+i = int(input('Write size of the house: '))
+print('Cost equals: ', dot(weight.T, [[1], [i]]), "thousand usd dollars money $$$")
