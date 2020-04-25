@@ -17,20 +17,3 @@ for i in x:
 
 plt.plot(x, y, 'ro', x, y1)
 plt.show()
-# mini = 90000000000
-# for i in range(130000, 137000):
-#     for j in range(2000, 2150):
-#         for i1 in range(0, 84):
-#             if i1 == 83:
-#                 s *= 0.006
-#                 if s < mini:
-#                     mini = s
-#                     im = i
-#                     jm = j
-#                 s = 0
-#             s += ((i + j * x[i1]) - y[i1])**2
-# y2 = []
-# for i in x:
-#     y2.append(jm * i + im)
-# s = 0
-
