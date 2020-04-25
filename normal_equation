@@ -9,4 +9,5 @@ for i in range(16, 101):
     y[i - 16][0] = 108 + randint(-25, 25) + 2 * x[i-16][1]
 weight = dot(dot(inv(dot(x.T, x)), x.T), y)
 i = int(input('Write size of the house: '))
-print('Cost equals: ', dot(weight.T, [[1], [i]]), "thousand usd dollars money $$$")
+a = dot(weight.T, [[1], [i]])
+print('Cost equals: ', a[0][0], "thousand usd dollars money $$$")
